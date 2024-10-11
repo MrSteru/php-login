@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Submit Your Credentials</title>
+    <title>Contact Form</title>
 </head>
 <body>
     <h1>Submit your credentials</h1>
     <form action="https://formspree.io/f/meoqqjyr" method="POST">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required><br><br>
-        <input type="submit" value="Submit">
+        <label for="email">Your email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+        <label for="message">Your message:</label><br>
+        <textarea id="message" name="message" placeholder="Enter your message" required></textarea><br><br>
+
+        <!-- Additional fields can go here -->
+
+        <button type="submit">Send</button>
     </form>
 </body>
 </html>
